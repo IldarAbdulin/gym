@@ -1,0 +1,44 @@
+.navbar {
+  @apply flex items-center justify-between fixed top-0 z-30 w-full py-6;
+  &__logo {
+    @apply flex items-center justify-between mx-auto w-5/6;
+    .navbar__logo-items {
+      @apply flex items-center justify-between w-full gap-16;
+    }
+    .navbar__logo-right-side {
+      @apply flex items-center justify-between w-full;
+      .navbar__logo-right-side-left {
+        @apply flex items-center justify-between gap-8 text-sm;
+      }
+      .navbar__logo-right-side-right {
+        @apply flex items-center justify-between gap-8;
+        .member-btn {
+          @apply rounded-md bg-secondary-500 px-10 py-2 duration-100 hover:bg-primary-500 hover:text-white;
+        }
+      }
+    }
+  }
+  &__burger {
+    @apply rounded-full bg-secondary-500 p-2;
+    .menu {
+      @apply h-6 w-6 text-white;
+    }
+  }
+}
+
+.isNavbarActive {
+  @apply bg-primary-100 drop-shadow;
+}
+
+.burger-active {
+  @apply fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl;
+  &__close {
+    @apply flex justify-end p-12;
+    .close-icon {
+      @apply h-6 w-6 text-gray-400;
+    }
+  }
+  &__navigation {
+    @apply ml-[33%] flex flex-col gap-10 text-2xl;
+  }
+}
