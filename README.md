@@ -1,12 +1,25 @@
-#First day:
-###Prepared everything for creating a single page application and practice with <[typescript](https://www.typescriptlang.org/)>
+# First day:
+
+### Prepared everything for creating a single page application and practice with <[typescript](https://www.typescriptlang.org/)>
 
 ---
 
-#Second day:
+# Second day:
 
-###<span style="color:rgb(137, 48, 170)">1) added a useMediaQuery hook that keeps track of the screenwidth for adaptability</span>
+### <span style="color:rgb(137, 48, 170)">1) added a useMediaQuery hook that keeps track of the screenwidth for adaptability</span>
 
-###<span style="color:rgb(137, 48, 170)">2) worked with types</span>
+### <span style="color:rgb(137, 48, 170)">2) worked with types</span>
 
 ### <span style="color:rgb(137, 48, 170)">3) made navbar, custom Link and Buttont</span>
+
+---
+
+# Third day:
+
+### <span style="color:rgb(137, 48, 170)">1) made home and benefits pages</span>
+
+### <span style="color:rgb(137, 48, 170)">2) worked with animation ( with framer-motion )</span>
+
+### <span style="color:rgb(137, 48, 170)">3) added some types and comp-nt HText</span>
+
+---

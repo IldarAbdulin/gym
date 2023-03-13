@@ -51,10 +51,7 @@ export const Navbar = ({
                 </div>
                 <div className="navbar__logo-right-side-right">
                   <p>Sign In</p>
-                  <ActionButton
-                    className="member-btn"
-                    setSelectedPage={setSelectedPage}
-                  >
+                  <ActionButton setSelectedPage={setSelectedPage}>
                     Become a Member
                   </ActionButton>
                 </div>

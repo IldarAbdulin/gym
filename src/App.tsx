@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar } from './scenes/navbar';
+import { Navbar, Home, Benefits } from './scenes';
 import { SelectedPage } from './shared/types';
 
 function App() {
@@ -19,7 +19,6 @@ function App() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  console.log(isTopOfPage);
 
   return (
     <div>
@@ -28,6 +27,8 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
+      <Home setSelectedPage={setSelectedPage} />
+      <Benefits setSelectedPage={setSelectedPage} />
     </div>
   );
 }

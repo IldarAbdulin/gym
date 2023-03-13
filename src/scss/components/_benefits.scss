@@ -1,0 +1,35 @@
+.benefits {
+  @apply mx-auto min-h-full w-5/6 py-20;
+  &__title {
+    @apply md:w-3/5 md:my-5;
+  }
+  &__main {
+    @apply mt-5 items-center justify-between gap-8 md:flex;
+  }
+  &__graphics {
+    @apply mt-16 items-center justify-between gap-20 md:mt-28 md:flex;
+    .graphics__title {
+      div {
+        .title__icon {
+          @apply before:absolute before:-top-20 before:-left-20 before:z-[-1] before:content-abstractwaves;
+        }
+        .title__second-icon {
+          @apply before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles;
+        }
+      }
+    }
+  }
+}
+
+.benefit {
+  @apply mt-5 rounded-md border-2 border-gray-100 px-5 py-16 text-center;
+  &__content {
+    @apply mb-4 flex justify-center;
+    .content__icon {
+      @apply ml-3 rounded-full border-2 border-gray-200 bg-primary-100 p-4;
+    }
+  }
+  &__link {
+    @apply ml-3 cursor-pointer text-sm font-bold text-primary-500 underline duration-100 hover:text-secondary-500;
+  }
+}
