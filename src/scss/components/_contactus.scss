@@ -1,0 +1,30 @@
+.contact {
+  @apply mx-auto w-5/6 py-24;
+  &__header {
+    @apply md:w-3/5;
+    span {
+      @apply text-primary-500;
+    }
+  }
+  &__form {
+    @apply mt-10 justify-between gap-8 md:flex;
+    input {
+      @apply mt-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white outline-none;
+    }
+    button {
+      @apply mt-5 rounded-lg bg-secondary-500 px-20 py-3 duration-300 transition hover:text-white;
+    }
+    textarea {
+      @apply mt-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white outline-none;
+    }
+    .form__right-side {
+      @apply relative mt-16 basis-2/5 md:mt-0;
+      .right-side__image {
+        @apply md:before:content-evolvetext w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1];
+        img {
+          @apply w-full;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.ourclasses {
+  @apply w-full bg-primary-100 py-40;
+  &__title {
+    @apply mx-auto w-5/6;
+  }
+  &__slider {
+    @apply mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden;
+    ul {
+      @apply w-[2800px] whitespace-nowrap;
+      li {
+        @apply relative mx-5 inline-block h-[380px] w-[450px];
+        .overlay {
+          @apply p-5 absolute z-30 flex
+          h-[380px] w-[450px] flex-col items-center justify-center
+          whitespace-normal bg-primary-500 text-center text-white
+          opacity-0 transition duration-300 hover:opacity-90 cursor-pointer;
+        }
+      }
+    }
+  }
+}

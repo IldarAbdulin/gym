@@ -1,5 +1,12 @@
 import React from 'react';
-import { Navbar, Home, Benefits } from './scenes';
+import {
+  Navbar,
+  Home,
+  Benefits,
+  OurClasses,
+  ContactUs,
+  Footer,
+} from './scenes';
 import { SelectedPage } from './shared/types';
 
 function App() {
@@ -29,6 +36,9 @@ function App() {
       />
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
+      <OurClasses setSelectedPage={setSelectedPage} />
+      <ContactUs setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   );
 }
